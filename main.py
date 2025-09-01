@@ -6,6 +6,8 @@ import os
 def run_agent():
     try:
         test1 = os.environ["test1"]
+    except:
+        test1="cant found"
     now = datetime.now()
     print(f"Running AI news agent at {now}")
 

@@ -1,13 +1,13 @@
 name: run main.py
 
 on:
-  schedule:
-    - cron: "*/6 * * * *"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+        test1: ${{secrets.test1}}
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content

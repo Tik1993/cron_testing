@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-        TEST1: ${{ secrets.test1 }}
+        TEST1: ${{ secrets.TEST1 }}
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content
